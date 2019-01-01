@@ -9,7 +9,7 @@ import (
 
 func main() {
 	port := flag.String("port", "9999", "http port")
-	dir := flag.String("dir", "./", "http port")
+	dir := flag.String("dir", "./", "server path")
 	flag.Parse()
 	absPath, err := filepath.Abs(*dir)
 	if err != nil {
